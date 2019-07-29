@@ -1,0 +1,35 @@
+
+<section class="container  section" id="photos">
+    <h2 class="indigo-text text-darken-3 ">
+        Portraits
+    </h2>
+    <div class="row" *ngFor='let event of Events ; odd as o'>
+        <div *ngIf='o ; then ifodd ; else ifeven'></div>
+        <ng-template #ifodd>
+            <div class="col s12 l4 push-l7 ">
+                <img src={{event.imgUrl}} class='responsive-img materialboxed' alt="euccosa">
+            </div>
+            <div class="col s12 l6 pull-l5 offset-l1">
+                <h2 class="indigo-text text-darken-4">
+                    {{event.title}}
+                </h2>
+                <p>{{event.description}}</p>
+            </div>
+
+        </ng-template>
+        <ng-template #ifeven>
+            <div class="col s12 l4 ">
+                <img src={{event.imgUrl}} class='responsive-img materialboxed' alt="euccosa">
+            </div>
+            <div class="col s12 l6 offset-l1">
+                <h2 class="indigo-text text-darken-4">
+                    {{event.title}}
+                </h2>
+                <p>{{event.description}}</p>
+            </div>
+        </ng-template>
+    </div>
+
+
+</section>
+

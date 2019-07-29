@@ -1,0 +1,65 @@
+<!-- contact form  component-->
+<section class="section scrollspy container" id="contact">
+    <div class="row">
+        <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">
+                Get In Touch
+            </h2>
+            <p>Telephone</p>
+            <p>Email-address:eucossa2019@gmail.com</p>
+            <p>Mobile Phone:+2547123456</p>
+            <p>Address: Egerton University Njoro Campus</p>
+        </div>
+        <div class="col s12 l5 offset-l2">
+            <form action="">
+                <div class="input-field">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" id='email'>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">message</i>
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message"> Your Message</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id='date' class='datepicker'>
+                    <label for="date">Choose a date for your presentation ....</label>
+                </div>
+                <div class="input-field">
+                    <p> Your Community ...</p>
+                    <!-- generates a list of communities availabe and render them -->
+                    <!-- using the *ngfor directive -->
+                    <!-- checkbox component -->
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Web Development</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>AI</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Security</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox">
+                            <span>Others</span>
+                        </label>
+                    </p>
+                </div>
+                <div class="input-field center">
+                    <button class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
